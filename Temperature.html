@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('hive temp',{
+        category: 'function',
+        color: '#FDF0C2',
+        defaults: {
+            hive: {value:"", type:'hive-server'}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "feed.png",
+        label: function() {
+            return this.name||"Hive Temperature";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="hive temp">
+    <div class="form-row">
+        <label for="node-input-hive"><i class="fa fa-globe"></i> Host</label>
+        <input type="text" id="node-input-hive" placeholder="Host">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="hive temp">
+    <p>Get temperature history</p>
+</script>

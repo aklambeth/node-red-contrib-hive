@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('hive heating',{
+        category: 'function',
+        color: '#FDF0C2',
+        defaults: {
+            hive: {value:"", type:'hive-server'}
+        },
+        inputs:1,
+        outputs:3,
+        icon: "feed.png",
+        label: function() {
+            return this.name||"Hive Heating Controller";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="hive heating">
+    <div class="form-row">
+        <label for="node-input-hive"><i class="fa fa-globe"></i> Host</label>
+        <input type="text" id="node-input-hive" placeholder="Host">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="hive heating">
+    <p>Control heating</p>
+</script>

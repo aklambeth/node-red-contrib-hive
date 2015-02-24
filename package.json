@@ -1,0 +1,23 @@
+{
+    "name"         : "node-red-contrib-hive",
+    "version"      : "0.1.0",
+    "description"  : "Hive Active Heating Nodes for Node Red",
+    "dependencies": {
+        "bg-hive-api":"1.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aklambeth/node-red-contrib-hive.git"
+    },
+    "keywords": [ "node-red",
+                  "hive",
+                  "home",
+                  "heating",
+                  "alertme",
+                  "thermostat"],
+    "node-red"     : {
+        "nodes": {
+            "hive": "hive.js"
+        }
+    }
+}
