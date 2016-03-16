@@ -71,6 +71,7 @@ module.exports = function(RED) {
                                 case "OFF" : mode = climate.Mode.Off; break;
                                 case "MANUAL" : mode = climate.Mode.Manual; break;
                                 case "SCHEDULE" : mode = climate.Mode.Schedule; break;
+                                case "BOOST" : mode = climate.Mode.Boost; break;
                                 case "OVERRIDE" : mode = "OVERRIDE"; break;
                                 default : mode = undefined;
                             }
